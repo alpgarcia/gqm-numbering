@@ -23,6 +23,51 @@ the numbered prefixes.
    used several times with the same heading, then this function will assign 
    the same numbered prefix to all its occurences.  
 
+## Example
+The following document structure:
+ * Introduction to GQM
+ * Use Cases
+   * 1st Use Case
+     * Description
+     * Goal: 1st Goal
+       * 1st Question
+         * 1st Metric
+         * 2nd Metric
+   * 2nd Use Case
+     * Description
+     * Goal: 2nd Goal
+       * 2nd Question
+         * 3rd Metric
+         * 4th Metric
+       * 3rd Question
+         * 3rd Metric  **\***
+         * 5th Metric
+ * References	
+ 
+(*) The same metric can be used in several places and should
+be numbered always the same to allow to identify it.
+
+Will be numbered as:
+ * Introduction to GQM
+ * Use Cases
+   * UC1. 1st Use Case
+     * Description
+     * Goal: 1st Goal
+       * Q1. 1st Question
+         * M1. 1st Metric
+         * M2. 2nd Metric
+   * UC2. 2nd Use Case
+     * Description
+     * Goal: 2nd Goal
+       * Q2. 2nd Question
+         * M3. 3rd Metric
+         * M4. 4th Metric
+       * Q3. 3rd Question
+         * M3. 3rd Metric
+         * M5. 5th Metric
+ * References
+
+   
 ## How to use it
 Once the script is stored in your account or associated to a document you should
 be able to see it on the top menu:
