@@ -12,6 +12,17 @@ default (and still not configurable) the headings are:
 **Please don't use tabs in titles**, they are used to separate and identify 
 the numbered prefixes.
 
+## Features
+ * Numbering relative to the corresponding heading, not to others.
+   This allows to have a unique number for each question, no matter where
+   the question is nested.
+ * Prefixes are included as part of the title text. This way they will also
+   appear in the table of contents (different from standard numbering
+   currently supported on Google docs).
+ * Supports using the same number for the same title: if the same title is 
+   used several times with the same heading, then this function will assign 
+   the same numbered prefix to all its occurences.  
+
 ## How to use it
 Once the script is stored in your account or associated to a document you should
 be able to see it on the top menu:
@@ -43,18 +54,6 @@ welcome screen, click `Blank Project`.
 ### Using clasp
 
 Please see [clasp documentation](https://developers.google.com/apps-script/guides/clasp).
-
-
-## Features
- * Numbering relative to the corresponding heading, not to others.
-   This allows to have a unique number for each question, no matter where
-   the question is nested.
- * Prefixes are included as part of the title text. This way they will also
-   appear in the table of contents (different from standard numbering
-   currently supported on Google docs).
- * Supports using the same number for the same title: if the same title is 
-   used several times with the same heading, then this function will assign 
-   the same numbered prefix to all its occurences.  
 
 ## Acknowledgements
 Base code borrowed from https://webapps.stackexchange.com/a/46905
